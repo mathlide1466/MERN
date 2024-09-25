@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node index.js",
+    "client": "cd frontend && npm start"
+  }
+}
